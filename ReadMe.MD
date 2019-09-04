@@ -1,6 +1,5 @@
 # MIT algorithm implementation
 
-This repository is for MIT algorithm implementation
+This repository is for algorithm implementation of MIT_6.006 course.
 
---By Tirth Hihoriya again
-in master
+--By Tirth Hihoriya
