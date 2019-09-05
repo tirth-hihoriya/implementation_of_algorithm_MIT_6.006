@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
 
 void merge(int a[],int f,int mid, int l)      //f->firrst , mid->middle , l->last
 {
@@ -61,10 +63,14 @@ int main()
     scanf("%d",&n);
 
     int a[n];
-    printf("\nEnter the elements: \n");
-    for(int i=0;i<n;i++){
-        scanf("%d",&a[i]);
-    }
+    // printf("\nEnter the elements: \n");
+    // for(int i=0;i<n;i++){
+    //     scanf("%d",&a[i]);
+    // }
+    srand(time(0));
+    for(int i=0;i<n;i++)
+        a[i] = rand()%1000;
+
 
     merge_sort(a,0,n-1);
 
