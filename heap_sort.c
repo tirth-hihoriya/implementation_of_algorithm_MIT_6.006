@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include<time.h>
 
-void max_heapify(int a[],int i,int size)
+void max_heapify(int a[],int i,int size)      //  O(lgn)
 {
     int l = 2*i+1;
     int r = 2*i+2;
@@ -24,14 +24,14 @@ void max_heapify(int a[],int i,int size)
         
 }
 
-void build_max_heap(int a[],int size)
+void build_max_heap(int a[],int size)          // O(n)
 {
     
     for(int i=size-1;i>=0;i--)
         max_heapify(a,i,size);
 }
 
-void heap_sort(int a[],int size)
+void heap_sort(int a[],int size)              //  O(nlgn)
 {
     int heap_size=size;
     build_max_heap(a,size);
