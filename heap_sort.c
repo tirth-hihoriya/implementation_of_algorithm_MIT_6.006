@@ -42,6 +42,8 @@ void heap_sort(int a[],int size)              //  O(nlgn)
         heap_size--;
         max_heapify(a,0,heap_size);
        }
+
+    
 }
 
 
