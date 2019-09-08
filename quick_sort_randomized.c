@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include<time.h>
 
-int randomized_partition(int a[],int p,int r)
+int partition(int a[],int p,int r)
 {
     int pivot = a[r];
     int i = p-1;
@@ -21,6 +21,15 @@ int randomized_partition(int a[],int p,int r)
             a[r] = temp2;
 
      return i+1;
+}
+
+int randomized_partition(int a[],int p,int r)
+{
+    int i = rand()%(r-p+1) + p;
+    int temp = a[r];
+    a[r] = a[i];
+    a[i] = temp;
+    partition(a,p,r);
 }
 
 void quick_sort(int a[],int p,int r)
