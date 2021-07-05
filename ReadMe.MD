@@ -2,4 +2,4 @@
 
 This repository is for algorithm implementation of MIT_6.006 course.
 
---By Tirth 
+--By Tirth Hihoriya
